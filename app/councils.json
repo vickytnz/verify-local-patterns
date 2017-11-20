@@ -1,5 +1,23 @@
 [
   {
+    "name" : "Orange Bus",
+    "shortName" : "OB",
+    "parkingBoundary" : "Orange Bus city",
+    "limitByHousehold":true,
+    "permitMax": 67,
+    "permitsCosts": [67, 77, 100, 100],
+    "sixmonth": true,
+    "payOnline":true,
+    "testChangeAddress":false,
+    "userChooseStartDate":true,
+    "permitWait": 0,
+    "tempPermit":true,
+    "string" : "ob",
+    "testv5cScan": false,
+    "testv5cnumber": false,
+    "DVLAAPIenforcement": false
+  },
+  {
     "name": "Argleton County Council",
     "shortName": "Argleton",
     "parkingBoundary": "Argleton city centre",

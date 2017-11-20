@@ -1,0 +1,67 @@
+{% extends "layout_picker.html" %}
+
+{% block page_title %}
+  Home page
+{% endblock %}
+
+
+{% block hero %}
+<div class="hero">
+<div class="grid-row" >
+<div class="column-full-width"><h1 class="hero__title" style="color: white; margin: 20px; ">{{council.name}} council services</h1>
+
+{% set list =['thing', 'another thing', 'something else', 'this thing', 'mayor', 'this'] %}
+{% for item in list %}
+
+
+
+<div class="column-one-third" style="" ><div style="background: white; display: block; padding: 10px; margin-bottom: 20px;"><h3 class="heading-small"><a  href="#">{{item}}</a></h3></div></div>
+
+
+{% endfor %}
+</div> <!-- grid row --></div>
+
+</div>
+{% endblock %}
+{% block content %}
+
+
+
+
+
+
+<main id="content" role="main">
+
+
+<div class="grid-row">
+
+{% for i in range(0, 12) -%}
+<div class="column-one-third">
+  <div style=" padding: 10px; margin-bottom: 20px; border: 1px solid;">
+<h3 class="heading-small"><a href="section">Section heading</a></h3>
+<ul class="list list-item">
+  {% for j in range(1, 4) -%}
+  <li><a href="content">This is a link</a></li>
+  {%- endfor %}
+</ul>
+</div>
+</div>
+
+{%- endfor %}
+<div class="column-full">
+<h2 class="heading-medium" style="margin-top: 0; margin-bottom: 0;">News</h2>
+</div>
+{% for i in range(1, 4) -%}
+<div class="column-one-third">
+  <img src="{{ asset_path }}images/news.png" />
+<h3 class="heading-small"><a href="#">This is the article title</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+<p><a href="#">Learn more</a></p>
+</div>
+{%- endfor %}
+</div>
+
+
+
+</main>
+{% endblock %}
